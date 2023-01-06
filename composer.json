@@ -1,10 +1,10 @@
 {
-  "name": "gmicommunity/ethereum-php",
+  "name": "omelette-jp/ethereum-php",
   "description": "A library integrating Ethereum with typed PHP.",
   "require": {
     "php": "^8.0",
     "ext-json": "*",
-    "gmicommunity/guzzle-jsonrpc": "dev-master",
+    "omelette-jp/guzzle-jsonrpc": "dev-master",
     "pear/math_biginteger": "^1.0",
     "kornrunner/keccak": "^1.0",
     "digitaldonkey/ecverify":"1.0"
@@ -36,5 +36,11 @@
       "name": "Peter Day",
       "email": "peterday.main@gmail.com"
     }
-  ]
+  ],
+  "repositories": {
+    "omelette-jp/guzzle-jsonrpc": {
+      "type": "vcs",
+      "url": "https://github.com/omelette-jp/guzzle-jsonrpc"
+    }
+  }
 }
