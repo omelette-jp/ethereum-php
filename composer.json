@@ -1,0 +1,40 @@
+{
+  "name": "gmicommunity/ethereum-php",
+  "description": "A library integrating Ethereum with typed PHP.",
+  "require": {
+    "php": "^8.0",
+    "ext-json": "*",
+    "gmicommunity/guzzle-jsonrpc": "dev-master",
+    "pear/math_biginteger": "^1.0",
+    "kornrunner/keccak": "^1.0",
+    "digitaldonkey/ecverify":"1.0"
+  },
+  "scripts": {
+    "generate-methods": [
+      "php scripts/generate-methods.php"
+    ],
+    "generate-complex-datatypes": [
+      "php scripts/generate-complex-datatypes.php"
+    ]
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.0 || ^5.0",
+    "gossi/php-code-generator": "^0.5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ethereum\\": "src/"
+    }
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Thorsten Krug",
+      "email": "thorsten.krug@consensys.net"
+    },
+    {
+      "name": "Peter Day",
+      "email": "peterday.main@gmail.com"
+    }
+  ]
+}
